@@ -3,17 +3,11 @@ let mysound;
 
 function preload() {
   // Carga la imagen de la carátula
-  let imageIndices = [0, 1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 14, 15, 16]; // Incluyendo los índices faltantes
+  let imageIndices = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16]; // Incluyendo los índices faltantes
  for (let i = 0; i < imageIndices.length; i++) {
     let index = imageIndices[i];
     images[index] = loadImage('assets/Image' + index + '.png');
   }
-
-
-//Carga de las imágenes adicionales. Agregar rutas cuando tenga las imagenes!!
-    //images[4] = loadImage('assets/Image4.png');
-   // images[12] = loadImage('assets/Image12.png'); // Imagen para el Final 3
-  // images[13] = loadImage('assets/Image13.png'); // Imagen para la pantalla 13 (Creditos)
 
 soundFormats('mp3');
 mySound= loadSound('assets/Song');
@@ -60,7 +54,7 @@ function draw() {
        } 
 
    else if ( screen == 4 ) {  // Descubriendo la clave
-   //image(images[4], 0, 0, width, height); // Muestra la imagen 4
+   image(images[4], 0, 0, width, height); // Muestra la imagen 4
       showTitleAndText( "Descubriendo la clave", "Dastan y Tamina descubren que la Daga es la clave para detener al verdadero traidor."
       );
      botones(); 
@@ -111,20 +105,21 @@ function draw() {
 
   else if ( screen == 11 ) { //Cambiando el Destino 
   image(images[11], 0, 0, width, height); // Muestra la imagen 11
-    image(images[11], 0, 0, width, height); // Muestra la imagen 11
       showTitleAndText( "Final 2", "Dastan utiliza la Daga para cambiar su destino, salvando a Alamut, a sí mismo y a su familia."
       );
        botones();
   }
 
    else if ( screen == 12 ) { // Final 3
-      showTitleAndText( "Final 3", "Gracias a sus esfuerzos, Tamina la princesa de Alamut le agradece besandolo."
+     image(images[12], 0, 0, width, height); 
+    showTitleAndText( "Final 3", "Gracias a sus esfuerzos, Tamina la princesa de Alamut le agradece besandolo."
       );
       botonesFinales(); 
       stopSound();
    }
 
    else if ( screen == 13 ) { // Créditos
+      image(images[13], 0, 0, width, height); 
       showTitleAndText("Créditos", "Alumnas y Desarrolladoras: Clar Agustina y Avanzini Ailen. \n Creadora de Imagenes: Dall-e IA");
       botonesFinales();
       stopSound();
