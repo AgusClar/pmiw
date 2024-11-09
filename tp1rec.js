@@ -1,3 +1,4 @@
+//Clar Agustina, 93551/8, link video: https://youtu.be/CdEjPThkhZo
 let foto;
 let ellipseSize;
 let ellipseColor;
