@@ -56,7 +56,7 @@ class MainScreen {
     image(ganasteBg, 0, 0, width, height);
     textAlign(CENTER);
     textSize(32);
-    text("¡Ganaste!", width / 2, height / 2);
+    text("¡Has salvado al reino!", width / 2, height / 2);
     
       //La cancion se detiene en esta pantalla
     song.stop();
@@ -66,7 +66,7 @@ class MainScreen {
     image(perdisteBg, 0, 0, width, height);
     textAlign(CENTER);
     textSize(32);
-    text("Perdiste", width / 2, height / 2);
+    text("El traidor ha vencido", width / 2, height / 2);
     
       //La cancion se detiene en esta pantalla
     song.stop();
