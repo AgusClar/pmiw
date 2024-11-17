@@ -1,3 +1,4 @@
+// Clar Agustina, Avanzini Ailen https://youtu.be/HsGLQ7tebw4
 let juego;
 let dastan, traitor;
 let secuaces = [];
